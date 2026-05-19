@@ -1,15 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Catalogo from './pages/Catalogo'
-import Marcas from './pages/Marcas'
-import Vehiculos from './pages/Vehiculos'
-import Fotografias from './pages/Fotografias'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Catalogo from "./pages/Catalogo";
+import Marcas from "./pages/Marcas";
+import Vehiculos from "./pages/Vehiculos";
+import Fotografias from "./pages/Fotografias";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-900">
-        
+      <div className="min-h-screen bg-[#0F172A] font-sans antialiased text-[#F8FAFC]">
         {/* El menú superior estará visible en todas las pantallas */}
         <Navbar />
 
@@ -22,10 +21,9 @@ function App() {
             <Route path="/fotografias" element={<Fotografias />} />
           </Routes>
         </main>
-
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
