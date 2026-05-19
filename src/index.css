@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Le dice a Tailwind v4 que escanee tus componentes de React */
+@layer base, components, utilities;
